@@ -1,13 +1,13 @@
 import './App.css';
-import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddNote from "./Component/addNote/AddNote"
 import ViewAllNote from "./Component/viewAllNote/ViewAllNote"
+import Navbar from "./Component/navbar/Navbar";
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Link to="/">Add Note</Link>
-      <Link to="view">View All Note</Link>
+        <Navbar />
         <Routes>
           <Route path="/" element={<AddNote />} />
           <Route path="view" element={<ViewAllNote />} />
