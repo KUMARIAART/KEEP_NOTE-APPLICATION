@@ -6,3 +6,39 @@ nav {
 nav a {
     margin-right: 16px;
 }
+#firstDiv{
+    height:55vh;
+    width: 19vw;
+    border:0.3vw solid black;
+    margin: auto;
+    margin-top:11vh;
+}
+label{
+    font-size:1.5vw;
+    color: brown;
+}
+h1{
+    font-size:1.8vw;
+    color: red;
+    margin-left:0.2vw;
+}
+button{
+    height:6vh;
+    width: 6vw;
+    margin-left:6vw;
+    background-color:lightskyblue;
+}
+
+table{
+    height:55vh;
+    width: 20vw;
+    border:0.3vw solid black;
+    margin-top:5vh;
+    margin-left: 2vw;
+}
+th,tr,thead{
+    border:0.2vw solid brown;
+}
+td{
+    border:0.1vw solid black; 
+}

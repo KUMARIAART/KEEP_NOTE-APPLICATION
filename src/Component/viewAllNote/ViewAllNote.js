@@ -12,24 +12,27 @@ const ViewAllNote = () => {
     }, []);
     return (
         <div>
-            <thead>
-               <tr>
-                 <th>Note Detail</th>
-                 <th>Due Date</th>
-                 <th>Category</th>
-               </tr>
-          </thead>
-            {showData.map((item) =>
-                <table>
-                    <tbody>
+            <b><h1>View All Note Details Bellow</h1></b> <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Note Detail</th>
+                        <th>Due Date</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {showData.map((item) =>
+
                         <tr>
                             <td>{item.note}</td>
                             <td>{item.date}</td>
                             <td>{item.category}</td>
                         </tr>
-                    </tbody>
-                </table>
-            )}
+
+                    )}
+                </tbody>
+            </table>
         </div>
     );
 }

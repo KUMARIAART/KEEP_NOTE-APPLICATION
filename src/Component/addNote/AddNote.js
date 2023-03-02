@@ -17,32 +17,34 @@ const AddNote = () => {
         })
     }
     return (
-        <>
+        
+        <div id='firstDiv'>
+            <b><h1>Note's Details Bellow</h1></b> <br/>
             <form>
 
-                <label>Note Detail:
-                    <textarea value={note} onChange={(e) => setNote(e.target.value)} />
+                <label><b>Note Detail:-</b>
+                    <textarea value={note} onChange={(e) => setNote(e.target.value)} /><br />
                 </label><br />
 
-                <label>Due Date:
+                <label><b>Due Date:-</b>
                     <input
                         type="date"
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                    />
+                    /><br />
                 </label><br />
 
-                <label>Category:
+                <label><b>Category:-</b>
                     <select value={category} onChange={(e) => setCategory(e.target.value)}>
                         <option value="Personal notes">Personal notes</option>
                         <option value="Office notes">Office notes</option>
                         <option value="Travel notes">Travel notes</option>
-                    </select>
-                </label><br />
+                    </select><br />
+                </label> <br /> <br /> <br/>
 
                 <button onClick={() => { addYourNotes(note, date, category) }}>Add Note</button>
             </form>
-        </>
+        </div>
     );
 }
 export default AddNote;
